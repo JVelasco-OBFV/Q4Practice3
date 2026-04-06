@@ -14,15 +14,43 @@
 
     <h2>Javascript For Loop</h2>
     <p id="sample"></p>
+    <br>
+
+    <h2>While loop</h2>
+    <p id="sample2"></p>
+    <br>
+
+    <h2>Do While Loop</h2>
+    <p id="sample3"></p>
+    <br>
 
     <script>
-        let Sample= "";
+        let Sample = "";
+        let Sample2 = "";
+        let y = 0;
+        let Sample3 = "";
+        let z = 0;
+        while (y < 5) {
+            Sample2 += "<br>The number is " + y;
+            y++;
+        }
+
+        document.getElementById("sample2").innerHTML = Sample2;
 
         for (let x = 0; x < 3; x++){
             Sample += "The number is " + x + "<br>"
         }
 
         document.getElementById("sample").innerHTML = Sample;
+
+        do {
+            Sample3 += "<br>The number is " + z;
+            z++;
+        }
+        while (z < 5);
+
+        document.getElementById("sample3").innerHTML = Sample3;
     </script>
+
 </body>
 </html>
